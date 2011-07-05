@@ -1,0 +1,16 @@
+.DS_Store
+*.pbxuser
+xcuserdata
+project.xcworkspace
+iOS/build
+Unity/Library/*
+Unity/Temp
+!EditorBuildSettings.asset
+!InputManager.asset
+!ProjectSettings.asset
+!QualitySettings.asset
+!TagManager.asset
+!TimeManager.asset
+!AudioManager.asset
+!DynamicsManager.asset
+!NetworkManager.asset
