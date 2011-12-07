@@ -1,0 +1,9 @@
+See AdMobTest.zip sample at
+http://forum.unity3d.com/threads/67817-I-will-pay-someone-to-show-me-how-to-integrate-admob
+
+For AdMob SDK 4.3.1, the Android project must be compiled
+against at least Android SDK r-13 (Android 3.2).
+
+To run on lower Android devices (Android 2.x etc.),
+you can set android:minSdkVersion in AndroidManifest.xml
+to lower level, like 6.
