@@ -46,11 +46,12 @@ public class UnityAdMobActivity extends UnityPlayerActivity {
     private AdSize determineAdSize() {
         int screenLayout = getResources().getConfiguration().screenLayout;
 
-        AdSize ret = AdSize.BANNER;                                           // 320x50, smallest
-        if ((screenLayout & Configuration.SCREENLAYOUT_SIZE_XLARGE) > 0)      // At least approximately 720x960
-            ret = AdSize.IAB_LEADERBOARD;                                     // 728x90
-        else if ((screenLayout & Configuration.SCREENLAYOUT_SIZE_LARGE) > 0)  // At least approximately 480x640
-            ret = AdSize.IAB_BANNER;                                          // 468x60
+        AdSize ret = AdSize.BANNER;                                             // 320x50, smallest
+        if ((screenLayout & Configuration.SCREENLAYOUT_SIZE_XLARGE) > 0)        // At least approximately 720x960
+            ret = AdSize.IAB_LEADERBOARD;                                       // 728x90
+        else if ((screenLayout & Configuration.SCREENLAYOUT_SIZE_LARGE) > 0 &&  // At least approximately 480x640
+                 (screenLayout & Configuration.SCREENLAYOUT_SIZE_NORMAL) == 0)  // Samsung Galaxy S reports both, but can only display AdSize.BANNER
+            ret = AdSize.IAB_BANNER;                                            // 468x60
 
         return ret;
     }
