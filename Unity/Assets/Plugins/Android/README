@@ -6,4 +6,12 @@ against at least Android SDK r-13 (Android 3.2).
 
 To run on lower Android devices (Android 2.x etc.),
 you can set android:minSdkVersion in AndroidManifest.xml
-to lower level, like 6.
+to lower level, like 8 (Android 2.2).
+
+From Eclipse, add classes.jar from Unity to the project build path.
+On Mac it is usually placed at:
+/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/bin/classes.jar
+or on Windows at:
+C:/Program Files/Unity/Editor/Data/PlaybackEngines/androidplayer/bin/classes.jar
+
+You can also edit .classpath directly.
