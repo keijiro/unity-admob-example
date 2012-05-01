@@ -1,6 +1,6 @@
 ### CAUTION
 
-This example is deprecated. Use "unity-adbanner-example" instead.
+**This example is deprecated. Use "unity-adbanner-example" instead.**
 
 https://github.com/keijiro/unity-adbanner-example
 
